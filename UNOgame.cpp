@@ -475,7 +475,7 @@ void skipTurn() //skipping the turn
     currentplayer=(currentplayer%2)+1;
 }
 
-void reverseTurn()//reverse the turn 
+void reverseTurn()
 {
 	currentplayer=(currentplayer%2)+1;
 }
@@ -532,7 +532,7 @@ bool unoCall(int currentplayer,int handSize1,int handSize2)
     char unoChoice;
     if ((currentplayer==1&&handSize1==2)||(currentplayer==2&&handSize2==2)) 
 	{
-        cout<<"You Have 2 Cards Left! Do You Want to Call UNO? (Y/N): ";//uno call when a player has 2 cards left
+        cout<<"You Have 2 Cards Left! Do You Want to Call UNO? (Y/N): ";
         cin>>unoChoice;
 
         if (unoChoice=='Y'||unoChoice=='y') 
